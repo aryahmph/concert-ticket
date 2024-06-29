@@ -1,0 +1,13 @@
+db:
+  host: localhost
+  port: 5432
+  user: user
+  password: password
+  db_name: concert_ticket
+  ssl_mode: disable
+  min_conn: 10
+  max_conn: 50
+
+cache:
+  addr: localhost:6379
+  minn_conn: 10

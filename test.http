@@ -1,0 +1,24 @@
+### Healthcheck
+GET http://localhost:8080/health
+
+### List categories
+GET http://localhost:8080/categories
+
+### Create order
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "category_id": 1,
+  "email": "arya6@test.com"
+}
+
+### Payment notification
+POST http://localhost:8080/payments/callback
+Content-Type: application/json
+
+{
+  "status_code": "200",
+  "order_id": "01J1H0SPJ7EJYFNWW0A2934CN5",
+  "transaction_status": "settlement"
+}

@@ -1,0 +1,24 @@
+http:
+  port: 8080
+  read_timeout_second: 5
+  write_timeout_second: 10
+
+db:
+  host: localhost
+  port: 5432
+  user: user
+  password: password
+  db_name: concert_ticket
+  ssl_mode: disable
+  min_conn: 10
+  max_conn: 100
+
+cache:
+  addr: localhost:6379
+  minn_conn: 10
+
+midtrans:
+  server_key: your-server-key-from-midtrans
+
+order:
+  cancellation_duration_second: 15
